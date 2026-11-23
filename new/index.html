@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>소쿠리 어펜딕스</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+/* 글자 크기 다섯 개: 제목 58 · 머리 문장 30 · 카드 제목 26 · 본문 22 · 주석 17 */
+:root{--f1:58px;--f2:30px;--f3:26px;--f4:22px;--f5:17px;
+--green:#0f9547;--deep:#0a5c2c;--mid:#37b866;--soft:#9fd8b2;--tint:#e3f6e9;--paper:#f4f8f3;--line:#dfe8dd;--yellow:#ffd43a;--ink:#15181a;--muted:#5f6b66}
+*{box-sizing:border-box}
+html{background:#dfe5df}
+body{margin:0;color:var(--ink);font:500 var(--f4)/1.4 Pretendard,-apple-system,"Apple SD Gothic Neo",sans-serif;font-variant-numeric:tabular-nums;word-break:keep-all;-webkit-font-smoothing:antialiased}
+h1,h2,p,ol,ul{margin:0}
+.deck{display:flex;flex-direction:column;align-items:center;gap:32px;padding:32px 0}
+.slide{width:1920px;height:1080px;position:relative;overflow:hidden;background:#fff;border-top:12px solid var(--green);box-shadow:0 4px 24px rgba(0,40,20,.10)}
+.header{position:absolute;inset:40px 76px auto}
+.eyebrow{font-size:var(--f4);font-weight:700;color:var(--muted)}
+.deck-id{position:absolute;right:0;top:0;display:flex;gap:16px;font-size:var(--f4);font-weight:700;color:var(--muted)}
+.deck-id b{color:var(--green)}.deck-id span{border-left:1px solid var(--line);padding-left:16px}
+h1{margin-top:8px;color:var(--green);font-size:var(--f1);line-height:1.1;font-weight:850;letter-spacing:-.045em}
+.lead{margin-top:18px;padding-left:24px;position:relative;font-size:var(--f2);letter-spacing:-.025em}
+.lead::before{content:"";position:absolute;left:0;top:.5em;width:10px;height:10px;background:var(--green)}
+.hl{position:relative;z-index:0;font-weight:800}
+.hl::after{content:"";position:absolute;z-index:-1;left:-2px;right:-2px;bottom:1px;height:.26em;border-radius:3px;background:var(--yellow)}
+.body{position:absolute;inset:232px 76px 84px;display:grid;gap:24px}
+.note{position:absolute;left:76px;right:76px;bottom:34px;font-size:var(--f5);color:var(--muted)}
+.card{background:var(--paper);border-radius:22px;padding:30px 34px;min-height:0}
+.kicker{font-size:var(--f3);font-weight:800;color:var(--green);letter-spacing:-.02em}
+.muted{color:var(--muted)}
+svg{display:block;overflow:visible}
+svg text{font-family:Pretendard,sans-serif}
+/* 틀 가: 왼쪽 큰 그림, 오른쪽 근거 칸 */
+.frame-a{grid-template-columns:1040px 1fr}
+.stack{display:grid;gap:16px;min-height:0}
+/* A1 */
+.chips{display:flex;align-items:center;gap:12px;font-size:var(--f4);color:var(--muted)}
+.chips span{background:#fff;border-radius:12px;padding:10px 16px;white-space:nowrap}
+.chips b{color:var(--ink);font-weight:800}.chips i{font-style:normal;color:var(--green);font-weight:900}
+.chips span.on{background:var(--green);color:#d9f2e0}.chips span.on b{color:#fff}
+.qc{background:var(--paper);border-radius:18px;padding:22px 30px;display:flex;flex-direction:column;justify-content:center}
+.qc p{font-size:var(--f3);line-height:1.4;font-weight:750;letter-spacing:-.02em;position:relative;padding-left:32px}
+.qc p::before{content:"“";position:absolute;left:0;top:-4px;color:var(--green);font-weight:900;font-size:var(--f1);line-height:1}
+.qc small{display:block;margin-top:10px;padding-left:32px;font-size:var(--f4);color:var(--muted)}
+.slot{border:2.5px dashed var(--soft);border-radius:18px;padding:18px 30px}
+.slot b{font-size:var(--f3)}.slot p{font-size:var(--f4);color:var(--muted);margin-top:4px}
+@media screen{.slide{zoom:var(--z,1)}}
+@page{size:1920px 1080px;margin:0}
+@media print{html{background:#fff}.deck{padding:0;gap:0}.slide{box-shadow:none;break-after:page;zoom:1!important}}
+</style>
+</head>
+<body>
+<main class="deck">
+
+<!-- A1 -->
+<section class="slide">
+  <header class="header"><p class="eyebrow">Appendix · 본문 2쪽</p><div class="deck-id"><b>SOKURI</b><span>A1</span></div>
+    <h1>식당 쪽 수요 근거</h1>
+    <p class="lead">사장님이 직접 쓴 구매 고민 글 1만 783건 중 <span class="hl">거의 절반이 거래처·발주 문제</span>입니다.</p></header>
+  <div class="body frame-a">
+    <div class="card" style="display:flex;flex-direction:column;justify-content:space-between">
+      <div>
+        <div class="kicker">글을 고른 과정</div>
+        <div class="chips" style="margin-top:16px">
+          <span>수집한 글 <b>4만 2,584</b></span><i>→</i>
+          <span>구매·원가 주제 <b>1만 4,396</b></span><i>→</i>
+          <span class="on">사장님이 쓴 고민·불만·후기 <b>1만 783</b></span>
+        </div>
+      </div>
+      <div>
+        <div class="kicker">1만 783건의 주제</div>
+        <svg viewBox="0 0 972 428" width="972" height="428" style="margin-top:20px">
+          <g font-size="26" font-weight="800" fill="#15181a">
+            <text x="0" y="40">발주 · 거래처 찾기</text><text x="0" y="148">원가 계산</text><text x="0" y="256">단가 변동</text><text x="0" y="364">공동구매 · 직거래</text></g>
+          <g font-size="22" fill="#5f6b66">
+            <text x="0" y="74">납품처를 바꾸거나 새로 찾는 글</text><text x="0" y="182">메뉴 원가와 가격을 정하는 글</text><text x="0" y="290">식자재 값이 오르내리는 글</text><text x="0" y="398">농가·업체와 직접 거래하려는 글</text></g>
+          <rect x="380" y="16" width="470" height="48" rx="4" fill="#0f9547"/>
+          <rect x="380" y="124" width="247" height="48" rx="4" fill="#37b866"/>
+          <rect x="380" y="232" width="120" height="48" rx="4" fill="#37b866"/>
+          <rect x="380" y="340" width="13" height="48" rx="4" fill="#9fd8b2"/>
+          <g font-size="26" font-weight="850" fill="#15181a"><text x="866" y="46">5,065</text><text x="643" y="154">2,666</text><text x="516" y="262">1,288</text><text x="409" y="370">141</text></g>
+          <g font-size="22" fill="#5f6b66"><text x="866" y="76">47%</text><text x="643" y="184">25%</text><text x="516" y="292">12%</text><text x="409" y="400">1%</text></g>
+        </svg>
+      </div>
+      <p class="muted" style="font-size:var(--f4)">한 글이 여러 주제에 들 수 있음 · 비율은 1만 783건 대비</p>
+    </div>
+    <div class="stack" style="grid-template-rows:1fr 1fr 1fr auto">
+      <div class="qc"><p>단가가 너무 들쭉날쭉해서 원가 계산을 제대로 못 하겠어요.</p><small>“한돈 납품처 바꾸신 분 계신가요?” · 자영업자의 쉼터</small></div>
+      <div class="qc"><p>업체 가격 인상 때 어떻게 대응하세요? 다른 업체 알아보시나요, 아니면 메뉴 가격 조정을 하시나요?</p><small>“식자재 5월부터 가격 인상된다고 연락 왔어요” · 오장</small></div>
+      <div class="qc"><p>꾸준히 직거래할 수 있는 농가분을 미리 알아보고 있습니다.</p><small>대전 식당 사장님의 양배추 농가 찾기 글 · 농라</small></div>
+      <div class="slot"><b>시립대 앞 식당 전화 인터뷰</b><p>결과를 받으면 이 칸에 추가</p></div>
+    </div>
+  </div>
+  <p class="note">자료: 네이버 카페 등 외식업 커뮤니티 글 4만 2,584건(2026년 11월 수집)을 글마다 분류 · 업체 홍보 글과 단순 정보 글 제외 · 인용은 원문 문장 그대로</p>
+</section>
+
+</main>
+<script>
+function fit(){const z=Math.min(1,(innerWidth-40)/1920);document.querySelectorAll('.slide').forEach(p=>p.style.setProperty('--z',z))}
+addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
