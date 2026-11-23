@@ -52,6 +52,50 @@ svg text{font-family:Pretendard,sans-serif}
 .tbl tr:last-child td{border-bottom:none}
 .tbl tr.me td{background:var(--tint)}
 .cell{background:#fff;border-radius:14px;padding:16px 20px}.cell b{font-size:var(--f3);color:var(--deep)}.cell p{margin-top:6px}
+/* extra */.kt{display:block;font-size:var(--f3);font-weight:800;color:var(--deep);letter-spacing:-.02em}
+.pt{margin-top:8px}
+.qc .pt{padding-left:0;font-size:var(--f4);font-weight:500;letter-spacing:0}.qc .pt::before{content:none}
+.qc .big{padding-left:0;font-size:var(--f1);font-weight:850;color:var(--green);line-height:1.1;margin-top:6px;letter-spacing:-.04em}.qc .big::before{content:none}
+.tbl.wrap td{white-space:normal}
+.tbl td.r,.tbl th.r{text-align:right}
+.tbl tr.sum td{border-top:2px solid var(--ink);font-weight:850;color:var(--deep);font-size:var(--f3)}
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.st{background:var(--paper);border-radius:18px;padding:20px 22px}
+.st b{display:block;font-size:var(--f3);margin-top:12px;letter-spacing:-.02em}.st p{margin-top:6px;color:var(--muted)}
+.n{display:inline-flex;width:40px;height:40px;border-radius:50%;background:var(--green);color:#fff;font-weight:850;font-size:var(--f4);align-items:center;justify-content:center}
+.kd{display:flex;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}.kd:last-child{border:none}
+.kd i{flex:none;width:18px;height:18px;border-radius:5px;margin-top:6px}.kd b{font-size:var(--f4)}.kd p{color:var(--muted)}
+.cmp td,.cmp th{vertical-align:middle}.cmp .c{text-align:center}.cmp th.me,.cmp td.me{background:var(--tint)}
+.cmp tr.diff td:first-child{color:var(--deep)}.cmp tr.diff td.me{background:#bfe5cc}
+.m{display:inline-block;width:26px;height:26px;vertical-align:middle}
+.m.o{border-radius:50%;border:3px solid var(--green)}
+.m.t{width:0;height:0;border-left:15px solid transparent;border-right:15px solid transparent;border-bottom:26px solid #9aa5a0}
+.m.x{position:relative}.m.x::before,.m.x::after{content:"";position:absolute;left:12px;top:0;width:3px;height:26px;background:#b7c0bb;transform:rotate(45deg)}.m.x::after{transform:rotate(-45deg)}
+.dflow{display:grid;grid-template-columns:1fr 60px 1fr 60px 1fr}
+.dn{background:var(--paper);border-radius:20px;padding:24px 28px}.dn b{display:block;font-size:var(--f3)}.dn p{margin-top:8px;color:var(--muted)}
+.dn.on{background:var(--green);color:#fff}.dn.on p{color:#d9f2e0}
+.da{position:relative}.da::before{content:"";position:absolute;left:10px;right:14px;top:50%;height:3px;background:var(--green)}
+.da::after{content:"";position:absolute;right:6px;top:calc(50% - 9px);border:9px solid transparent;border-left:13px solid var(--green)}
+.lg{font-size:var(--f2);font-weight:800;letter-spacing:-.03em;margin-top:14px;line-height:1.3}
+.sl{margin:10px 0 0;padding-left:22px}.sl li{padding:3px 0;line-height:1.3}
+.cover{background:var(--green);border-top-color:var(--green);color:#fff}
+.cover::after{content:"";position:absolute;inset:24px;border:1px solid #ffffff38;border-radius:18px;pointer-events:none}
+.cover .in{position:absolute;inset:90px 110px;display:grid;grid-template-columns:640px 1fr;gap:90px}
+.cover .tt{position:relative}
+.cover .tt img{width:110px;filter:brightness(0) invert(1)}
+.cover .tt .e{font-size:var(--f2);font-weight:700;color:#d9f2e0;margin-top:34px;letter-spacing:.04em}
+.cover h2{font-size:92px;font-weight:850;letter-spacing:-.045em;margin-top:8px;line-height:1.05}
+.cover .tt p{font-size:var(--f2);color:#d9f2e0;margin-top:22px;line-height:1.45}
+.cover .tt .notice{font-size:var(--f4);border-left:3px solid var(--yellow);padding-left:18px;margin-top:60px;line-height:1.5}
+.cover .tt .by{position:absolute;bottom:0;font-size:var(--f4);color:#d9f2e0}
+.qlist{list-style:none;padding:22px 40px;background:#fff;color:var(--ink);border-radius:22px;margin:0;align-self:stretch;display:flex;flex-direction:column;justify-content:space-between}
+.qlist li{display:grid;grid-template-columns:76px 1fr;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--line)}
+.qlist li:last-child{border:none}
+.qlist li span{color:var(--green);font-weight:850;font-size:var(--f3)}
+.qlist li b{font-size:var(--f3);letter-spacing:-.02em}.qlist li small{display:block;font-size:var(--f4);color:var(--muted);font-weight:500}
+.big8{font-size:var(--f1);font-weight:850;color:var(--green);letter-spacing:-.04em;margin-top:10px}
+.share{display:flex;gap:3px;margin-top:14px;height:72px}.share span{display:flex;align-items:center;padding:0 16px;color:#fff;font-weight:800;border-radius:6px;white-space:nowrap}
+/* extra end */
 @media screen{.slide{zoom:var(--z,1)}}
 @page{size:1920px 1080px;margin:0}
 @media print{html{background:#fff}.deck{padding:0;gap:0}.slide{box-shadow:none;break-after:page;zoom:1!important}}
@@ -59,7 +103,20 @@ svg text{font-family:Pretendard,sans-serif}
 </head>
 <body>
 <main class="deck">
-
+<!-- 표지 -->
+<section class="slide cover">
+  <div class="in">
+    <div class="tt">
+      <img src="../img/logo-basket.png" alt="">
+      <div class="e">APPENDIX</div>
+      <h2>질의응답<br>참고 자료</h2>
+      <p>발표에서 다 보여 드리지 못한 근거를<br>예상 질문별로 한 쪽씩 담았습니다.</p>
+      <p class="notice">발표 장표에 없는 세부 내용으로, 질의응답 때 심사위원님의 이해를 돕기 위해 준비한 자료입니다.</p>
+      <div class="by">소쿠리 · 박수현 · 김동훈 · 이승헌</div>
+    </div>
+    <ol class="qlist"><li><span>A1</span><div><b>식당 쪽 수요 근거</b><small>사장님이 쓴 구매 고민 글 1만 783건</small></div></li><li><span>A2</span><div><b>농가 공급 근거</b><small>인터뷰 농가와 밀양 청양고추 농가</small></div></li><li><span>A3</span><div><b>가격 비교</b><small>상자 구매와 필요한 만큼 구매</small></div></li><li><span>A4</span><div><b>돈의 흐름과 단위 수익</b><small>청양고추 1kg 기준</small></div></li><li><span>A5</span><div><b>운영 원칙과 미달·지연 대응</b><small>최소 출하량, 배송, 정산</small></div></li><li><span>A6</span><div><b>매출 산출과 수치의 성격</b><small>공식 통계, 팀 조사, 사업 가정</small></div></li><li><span>A7</span><div><b>경쟁 비교 근거</b><small>본문 11쪽 비교표</small></div></li><li><span>A8</span><div><b>해외 B2B 검증 계획</b><small>첫 고객 5곳 인터뷰</small></div></li></ol>
+  </div>
+</section>
 <!-- A1 -->
 <section class="slide">
   <header class="header"><p class="eyebrow">Appendix · 본문 2쪽</p><div class="deck-id"><b>SOKURI</b><span>A1</span></div>
@@ -93,9 +150,9 @@ svg text{font-family:Pretendard,sans-serif}
       <p class="muted" style="font-size:var(--f4)">한 글이 여러 주제에 들 수 있음 · 비율은 1만 783건 대비</p>
     </div>
     <div class="stack" style="grid-template-rows:1fr 1fr 1fr auto">
-      <div class="qc"><p>단가가 너무 들쭉날쭉해서 원가 계산을 제대로 못 하겠어요.</p><small>“한돈 납품처 바꾸신 분 계신가요?” · 자영업자의 쉼터</small></div>
-      <div class="qc"><p>업체 가격 인상 때 어떻게 대응하세요? 다른 업체 알아보시나요, 아니면 메뉴 가격 조정을 하시나요?</p><small>“식자재 5월부터 가격 인상된다고 연락 왔어요” · 오장</small></div>
-      <div class="qc"><p>꾸준히 직거래할 수 있는 농가분을 미리 알아보고 있습니다.</p><small>대전 식당 사장님의 양배추 농가 찾기 글 · 농라</small></div>
+      <div class="qc"><p>지금처럼 비수기일 때는 상추, 깻잎도 금방 물러지고 상하니까 소량씩만 주문하거든요</p><small>작은 포차 사장님 · 아프니까 사장이다</small></div>
+      <div class="qc"><p>그런데 최근 푸*팡이 5만 원 미만 주문 시 배송비가 14,000원 발생하게 되어, 소량 주문이 많은 저희 매장에서는 이용하기가 조금 부담스러워졌습니다.</p><small>중랑구 소규모 식당 사장님 · 아프니까 사장이다</small></div>
+      <div class="qc"><p>산지 직거래는 최소 주문 물량 때문에 소규모 식당은 엄두가 안 나는데 인근 식당들이랑 공동 구매 형태로 하시는 분들 계신가요.</p><small>국밥집 사장님 · 오장</small></div>
       <div class="slot"><b>시립대 앞 식당 전화 인터뷰</b><p>결과를 받으면 이 칸에 추가</p></div>
     </div>
   </div>
@@ -147,6 +204,117 @@ svg text{font-family:Pretendard,sans-serif}
   <p class="note">자료: 팀 농가 인터뷰, 판로 고민이 있는 농가를 모집해 진행 · 농가별 브랜딩 구성안 · 지도: 시도 경계 southkorea-maps(통계청 2013)</p>
 </section>
 
+<!-- A3 -->
+<section class="slide">
+  <header class="header"><p class="eyebrow">Appendix · 본문 10쪽</p><div class="deck-id"><b>SOKURI</b><span>A3</span></div>
+    <h1>가격 비교</h1>
+    <p class="lead">10kg 상자는 kg당 싸지만, <span class="hl">버리는 양까지 치면 소쿠리가 싸지는 지점</span>이 있습니다.</p></header>
+  <div class="body frame-a">
+    <div class="card"><div class="kicker">쓴 1kg당 비용 · 청양고추 10kg 상자를 사서 일부만 쓴 경우</div><svg viewBox="0 0 972 630" width="972" height="630" style="margin-top:14px"><line x1="96" x2="930" y1="447.1" y2="447.1" stroke="#dfe8dd" stroke-width="1.5"/><text x="84" y="454.1" font-size="17" fill="#5f6b66" text-anchor="end">6,000</text><line x1="96" x2="930" y1="334.1" y2="334.1" stroke="#dfe8dd" stroke-width="1.5"/><text x="84" y="341.1" font-size="17" fill="#5f6b66" text-anchor="end">8,000</text><line x1="96" x2="930" y1="221.2" y2="221.2" stroke="#dfe8dd" stroke-width="1.5"/><text x="84" y="228.2" font-size="17" fill="#5f6b66" text-anchor="end">10,000</text><line x1="96" x2="930" y1="108.2" y2="108.2" stroke="#dfe8dd" stroke-width="1.5"/><text x="84" y="115.2" font-size="17" fill="#5f6b66" text-anchor="end">12,000</text><text x="96.0" y="590" font-size="17" fill="#5f6b66" text-anchor="middle">5kg</text><text x="262.8" y="590" font-size="17" fill="#5f6b66" text-anchor="middle">6kg</text><text x="429.6" y="590" font-size="17" fill="#5f6b66" text-anchor="middle">7kg</text><text x="596.4" y="590" font-size="17" fill="#5f6b66" text-anchor="middle">8kg</text><text x="763.2" y="590" font-size="17" fill="#5f6b66" text-anchor="middle">9kg</text><text x="930.0" y="590" font-size="17" fill="#5f6b66" text-anchor="middle">10kg</text><line x1="96" x2="930" y1="560" y2="560" stroke="#15181a" stroke-width="1.5"/><text x="513" y="622" font-size="17" fill="#5f6b66" text-anchor="middle">10kg 상자 중 실제로 쓴 양</text><path d="M96.0,104.8 L104.3,111.6 L112.7,118.2 L121.0,124.7 L129.4,131.0 L137.7,137.3 L146.0,143.4 L154.4,149.4 L162.7,155.3 L171.1,161.1 L179.4,166.8 L187.7,172.3 L196.1,177.8 L204.4,183.2 L212.8,188.5 L221.1,193.7 L229.4,198.8 L237.8,203.8 L246.1,208.7 L254.5,213.6 L262.8,218.4 L271.1,223.0 L279.5,227.7 L287.8,232.2 L296.2,236.7 L304.5,241.1 L312.8,245.4 L321.2,249.6 L329.5,253.8 L337.9,257.9 L346.2,262.0 L354.5,266.0 L362.9,269.9 L371.2,273.8 L379.6,277.6 L387.9,281.4 L396.2,285.1 L404.6,288.8 L412.9,292.4 L421.3,295.9 L429.6,299.4 L437.9,302.9 L446.3,306.3 L454.6,309.6 L463.0,312.9 L471.3,316.2 L479.6,319.4 L488.0,322.6 L496.3,325.7 L504.7,328.8 L513.0,331.9 L521.3,334.9 L529.7,337.8 L538.0,340.8 L546.4,343.7 L554.7,346.5 L563.0,349.3 L571.4,352.1 L579.7,354.8 L588.1,357.6 L596.4,360.2 L604.7,362.9 L613.1,365.5 L621.4,368.1 L629.8,370.6 L638.1,373.1 L646.4,375.6 L654.8,378.1 L663.1,380.5 L671.5,382.9 L679.8,385.3 L688.1,387.6 L696.5,389.9 L704.8,392.2 L713.2,394.5 L721.5,396.7 L729.8,398.9 L738.2,401.1 L746.5,403.3 L754.9,405.4 L763.2,407.5 L771.5,409.6 L779.9,411.7 L788.2,413.7 L796.6,415.8 L804.9,417.8 L813.2,419.7 L821.6,421.7 L829.9,423.6 L838.3,425.5 L846.6,427.4 L854.9,429.3 L863.3,431.2 L871.6,433.0 L880.0,434.8 L888.3,436.6 L896.6,438.4 L905.0,440.2 L913.3,441.9 L921.7,443.7 L930.0,445.4" fill="none" stroke="#5f6b66" stroke-width="3"/><path d="M96.0,232.5 L104.3,237.9 L112.7,243.3 L121.0,248.6 L129.4,253.8 L137.7,258.8 L146.0,263.8 L154.4,268.7 L162.7,273.5 L171.1,278.2 L179.4,282.8 L187.7,287.3 L196.1,291.8 L204.4,296.1 L212.8,300.4 L221.1,304.7 L229.4,308.8 L237.8,312.9 L246.1,316.9 L254.5,320.8 L262.8,324.7 L271.1,328.5 L279.5,332.3 L287.8,336.0 L296.2,339.6 L304.5,343.2 L312.8,346.7 L321.2,350.1 L329.5,353.5 L337.9,356.9 L346.2,360.2 L354.5,363.4 L362.9,366.6 L371.2,369.8 L379.6,372.9 L387.9,375.9 L396.2,379.0 L404.6,381.9 L412.9,384.9 L421.3,387.7 L429.6,390.6 L437.9,393.4 L446.3,396.2 L454.6,398.9 L463.0,401.6 L471.3,404.2 L479.6,406.8 L488.0,409.4 L496.3,412.0 L504.7,414.5 L513.0,416.9 L521.3,419.4 L529.7,421.8 L538.0,424.2 L546.4,426.5 L554.7,428.8 L563.0,431.1 L571.4,433.4 L579.7,435.6 L588.1,437.8 L596.4,440.0 L604.7,442.1 L613.1,444.3 L621.4,446.4 L629.8,448.4 L638.1,450.5 L646.4,452.5 L654.8,454.5 L663.1,456.5 L671.5,458.4 L679.8,460.3 L688.1,462.2 L696.5,464.1 L704.8,466.0 L713.2,467.8 L721.5,469.6 L729.8,471.4 L738.2,473.2 L746.5,475.0 L754.9,476.7 L763.2,478.4 L771.5,480.1 L779.9,481.8 L788.2,483.5 L796.6,485.1 L804.9,486.7 L813.2,488.3 L821.6,489.9 L829.9,491.5 L838.3,493.1 L846.6,494.6 L854.9,496.1 L863.3,497.6 L871.6,499.1 L880.0,500.6 L888.3,502.1 L896.6,503.5 L905.0,505.0 L913.3,506.4 L921.7,507.8 L930.0,509.2" fill="none" stroke="#9fd8b2" stroke-width="3"/><line x1="96" x2="930" y1="409.8" y2="409.8" stroke="#0f9547" stroke-width="4"/><line x1="772.2" x2="772.2" y1="409.8" y2="560" stroke="#0a5c2c" stroke-width="1.5" stroke-dasharray="5 5"/><circle cx="772.2" cy="409.8" r="8" fill="#fff" stroke="#0a5c2c" stroke-width="3"/><line x1="489.2" x2="489.2" y1="409.8" y2="560" stroke="#0a5c2c" stroke-width="1.5" stroke-dasharray="5 5"/><circle cx="489.2" cy="409.8" r="8" fill="#fff" stroke="#0a5c2c" stroke-width="3"/><g font-size="22" font-weight="800"><line x1="0" x2="40" y1="14" y2="14" stroke="#5f6b66" stroke-width="3"/><text x="52" y="22" fill="#5f6b66">쿠팡 10kg 상자 6,030원/kg</text><line x1="350" x2="390" y1="14" y2="14" stroke="#9fd8b2" stroke-width="3"/><text x="402" y="22" fill="#0a5c2c">중도매인 10kg 4,900원/kg</text><line x1="690" x2="730" y1="14" y2="14" stroke="#0f9547" stroke-width="4"/><text x="742" y="22" fill="#0f9547">소쿠리 6,660원/kg</text></g><g font-size="17" font-weight="700" fill="#0a5c2c"><text x="782" y="548">약 1kg 버리면 역전</text><text x="499" y="548">약 2.7kg 버리면 역전</text></g></svg>
+</div>
+    <div class="stack" style="grid-template-rows:1fr 1fr 1fr auto">
+      <div class="qc"><b class="kt">계산 방법</b><p class="pt">상자 값 ÷ 실제로 쓴 양. 쿠팡 상자 60,300원, 중도매인 10kg 49,000원을 소쿠리 kg당 6,660원과 비교</p></div>
+      <div class="qc"><b class="kt">소쿠리 6,660원의 구성</b><p class="pt">경락가 4,778원 + 식당 수수료 382원 + 택배 700원 + 소분·포장 500원 + 근거리 배송 300원</p></div>
+      <div class="qc"><b class="kt">시범운영에서 비교할 것</b><p class="pt">식당 10곳의 지금 구매 영수증(식자재마트·도매상)과 비교. 성공 기준은 배송비 포함 kg당 구매비 15% 이상 절감(본문 4쪽)</p></div>
+      <div class="slot"><b>확인 중</b><p>시립대 앞 식당의 실제 구매처와 kg당 구매가</p></div>
+    </div>
+  </div>
+  <p class="note">자료: 가락시장 청양고추 경락가(2026.11.21), aT KAMIS 중도매인 판매가, 쿠팡 국내산 청양고추 10kg 판매가(2026.11 조회) · 계산에 시장 왕복 시간과 상자 보관 공간은 넣지 않음</p>
+</section>
+<!-- A4 -->
+<section class="slide">
+  <header class="header"><p class="eyebrow">Appendix · 본문 10 · 12쪽</p><div class="deck-id"><b>SOKURI</b><span>A4</span></div>
+    <h1>돈의 흐름과 단위 수익</h1>
+    <p class="lead">식당 도착가 6,660원 중 <span class="hl">소쿠리 몫은 525원</span>이고, 물류비는 그대로 비용으로 나갑니다.</p></header>
+  <div class="body frame-a">
+    <div class="card"><div class="kicker">청양고추 1kg · 2kg 주문 기준</div><svg viewBox="0 0 904 640" width="904" height="640" style="margin-top:16px">
+<text x="0" y="26" font-size="22" font-weight="800" fill="#15181a">식당이 내는 돈 6,660원</text><g transform="translate(0,40)"><rect x="0.0" y="22" width="642.7" height="88" rx="4" fill="#cfe9d8"/><text x="12.0" y="62" font-size="22" font-weight="800" fill="#0a5c2c">상품가(경락가)</text><text x="12.0" y="92" font-size="22" fill="#0a5c2c">4,778원</text><rect x="645.7" y="22" width="48.6" height="88" rx="4" fill="#0f9547"/><rect x="697.3" y="22" width="91.6" height="88" rx="4" fill="#9aa5a0"/><rect x="791.9" y="22" width="64.6" height="88" rx="4" fill="#b7c0bb"/><rect x="859.5" y="22" width="37.5" height="88" rx="4" fill="#d3d9d6"/></g><text x="671.5" y="178" font-size="22" font-weight="800" fill="#15181a" text-anchor="middle">382</text><text x="671.5" y="206" font-size="17" fill="#5f6b66" text-anchor="middle">수수료 8%</text><text x="744.6" y="178" font-size="22" font-weight="800" fill="#15181a" text-anchor="middle">700</text><text x="744.6" y="206" font-size="17" fill="#5f6b66" text-anchor="middle">택배</text><text x="825.7" y="178" font-size="22" font-weight="800" fill="#15181a" text-anchor="middle">500</text><text x="825.7" y="206" font-size="17" fill="#5f6b66" text-anchor="middle">소분·포장</text><text x="879.7" y="178" font-size="22" font-weight="800" fill="#15181a" text-anchor="middle">300</text><text x="879.7" y="206" font-size="17" fill="#5f6b66" text-anchor="middle">배송</text>
+<text x="0" y="256" font-size="22" font-weight="800" fill="#15181a">돈이 가는 곳</text><g transform="translate(0,270)"><rect x="0.0" y="22" width="623.4" height="88" rx="4" fill="#cfe9d8"/><text x="12.0" y="62" font-size="22" font-weight="800" fill="#0a5c2c">농가 정산</text><text x="12.0" y="92" font-size="22" fill="#0a5c2c">4,635원</text><rect x="626.4" y="22" width="67.9" height="88" rx="4" fill="#0f9547"/><rect x="697.3" y="22" width="199.7" height="88" rx="4" fill="#b7c0bb"/><text x="709.3" y="62" font-size="22" font-weight="800" fill="#15181a">물류비</text><text x="709.3" y="92" font-size="22" fill="#15181a">1,500원</text></g><text x="661.8" y="408" font-size="22" font-weight="800" fill="#0f9547" text-anchor="middle">525</text><text x="661.8" y="436" font-size="17" fill="#5f6b66" text-anchor="middle">소쿠리</text>
+<text x="0" y="486" font-size="22" font-weight="800" fill="#0f9547">소쿠리 몫 525원 확대</text><g transform="translate(0,500)"><rect x="0" y="22" width="651.9" height="88" rx="4" fill="#0f9547"/><text x="14" y="62" font-size="22" font-weight="800" fill="#fff">식당 수수료 382원</text><text x="14" y="92" font-size="22" fill="#fff">상품가 4,778원의 8%</text><rect x="654.9" y="22" width="245.1" height="88" rx="4" fill="#37b866"/><text x="668.9" y="62" font-size="22" font-weight="800" fill="#fff">농가 수수료 143원</text><text x="668.9" y="92" font-size="22" fill="#fff">경락가의 3%</text></g>
+</svg></div>
+    <div class="stack" style="grid-template-rows:1fr 1fr 1fr auto">
+      <div class="qc"><b class="kt">공동발주 1회 · 10kg</b><p class="big">5,250원</p><p class="pt">식당 5곳이 2kg씩 주문한 예시의 소쿠리 매출</p></div>
+      <div class="qc"><b class="kt">점포 한 곳 · 한 달</b><p class="big">11만 원</p><p class="pt">월 거래액 100만 원 × (8% + 3%), 매출 기준</p></div>
+      <div class="qc"><b class="kt">농가 정산</b><p class="pt">경락가 4,778원 − 판매수수료 3% = 4,635원. 출하·검수 확인 뒤 정산. 판매수수료 3%는 가락시장 위탁수수료 4%·하역비보다 적음(본문 10쪽)</p></div>
+      <div class="slot"><b>확인 중</b><p>결제 수수료, 포장재, 폐기를 뺀 실제 이익</p></div>
+    </div>
+  </div>
+  <p class="note">자료: 가락시장 청양고추 경락가(2026.11.21) · 수수료율과 물류비는 사업 가정 · 물류비에는 수수료를 붙이지 않음 · 위 두 띠는 금액에 비례</p>
+</section>
+<!-- A5 -->
+<section class="slide">
+  <header class="header"><p class="eyebrow">Appendix · 본문 6쪽</p><div class="deck-id"><b>SOKURI</b><span>A5</span></div>
+    <h1>운영 원칙과 미달·지연 대응</h1>
+    <p class="lead">최소 출하량을 채울 때만 발주하고, <span class="hl">못 채우면 마감 2일 전에 알립니다</span>.</p></header>
+  <div class="body" style="grid-template-rows:auto 1fr auto">
+    <div class="flow"><div class="st"><span class="n">1</span><b>농가 등록</b><p>품목, 규격, 최소 출하량</p></div><div class="st"><span class="n">2</span><b>식당 주문</b><p>필요한 만큼, 같은 납품일 합산</p></div><div class="st"><span class="n">3</span><b>발주 확정</b><p>최소 출하량을 채우면 농가에 발주</p></div><div class="st"><span class="n">4</span><b>산지 출하</b><p>10kg 한 번에 택배로</p></div><div class="st"><span class="n">5</span><b>소분·배송</b><p>납품 당일 시립대 인근 소분, 정문 500m 직접 배송</p></div><div class="st"><span class="n">6</span><b>검수·정산</b><p>출하·검수 확인 뒤 농가 정산</p></div></div>
+    <div class="card" style="padding:20px 32px 6px"><table class="tbl wrap" style="height:100%"><colgroup><col style="width:260px"><col><col style="width:260px"></colgroup>
+      <thead><tr><th>상황</th><th>원칙</th><th>근거</th></tr></thead><tbody><tr><td><b>최소 출하량 미달</b></td><td>마감 2일 전 알림. 식당이 다음 납품일 이월 또는 전액 환불 선택</td><td class="muted">본문 6쪽</td></tr><tr><td><b>배송 지연</b></td><td>주 1회 구역별 정기 배송으로 시작. 급한 재료는 쿠팡 등 기존 구매처에 맡기고 늘 쓰는 재료만 묶음</td><td class="muted">11-18 팀 회의</td></tr><tr><td><b>소분</b></td><td>납품 당일 시립대 인근 공간에서 소분. 소분·포장비 kg당 500원(인건비 포함)을 공급가에 반영</td><td class="muted">v17 부록, 본문 10쪽</td></tr><tr><td><b>배송 범위</b></td><td>시범운영은 팀이 정문 500m 안 직접 배송. 확대 후 지역 배송 파트너(회당 3,000원, 공급가 포함)</td><td class="muted">v17 부록</td></tr><tr><td><b>결제와 정산</b></td><td>결제는 식당 → 소쿠리, 정산은 소쿠리 → 농가. 경락가 기준 − 판매수수료 3%</td><td class="muted">v17 부록</td></tr></tbody></table></div>
+    <div class="slot" style="display:flex;gap:20px;align-items:baseline"><b>확인 중</b><p style="margin:0">품질 불만이 생겼을 때 정산 처리, 버섯 등 신선 품목의 배송 방법</p></div>
+  </div>
+  <p class="note">자료: 본문 6쪽 공동발주 원리, 승헌 v17 부록 A3 운영 원칙(안), 11-18 팀 회의 정리</p>
+</section>
+<!-- A6 -->
+<section class="slide">
+  <header class="header"><p class="eyebrow">Appendix · 본문 13 · 14쪽</p><div class="deck-id"><b>SOKURI</b><span>A6</span></div>
+    <h1>매출 산출과 수치의 성격</h1>
+    <p class="lead">2028년 연매출 20.1억 원은 <span class="hl">점포 수와 월 거래액 가정</span>에서 출발합니다.</p></header>
+  <div class="body" style="grid-template-columns:1020px 1fr">
+    <div class="card" style="padding:22px 32px 18px;display:flex;flex-direction:column"><table class="tbl" style="flex:1"><colgroup><col style="width:270px"><col><col style="width:200px"><col style="width:250px"></colgroup>
+      <thead><tr><th>항목</th><th>산식</th><th class="r">2027년</th><th class="r">2028년</th></tr></thead>
+      <tbody><tr><td><b>연평균 공동발주 점포</b></td><td class="muted">시범 10곳 → 2027년 말 150곳</td><td class="r">75곳</td><td class="r">500곳</td></tr><tr><td><b>점포당 월 거래액</b></td><td class="muted">농가 정산 기준가, 2028년 품목 확장</td><td class="r">100만 원</td><td class="r">150만 원</td></tr><tr><td><b>연 거래액</b></td><td class="muted">점포 × 월 거래액 × 12</td><td class="r">9억</td><td class="r">90억</td></tr><tr><td><b>① 식당 수수료</b></td><td class="muted">거래액 × 8%</td><td class="r">0.72억</td><td class="r">7.2억</td></tr><tr><td><b>② 농가 판매수수료</b></td><td class="muted">거래액 × 3%</td><td class="r">0.27억</td><td class="r">2.7억</td></tr><tr><td><b>③ 상권 리서치 구독</b></td><td class="muted">구독 수 × 월 2.9만 원 × 개월</td><td class="r">50곳 × 6개월 · 0.09억</td><td class="r">1,200곳 × 12개월 · 4.18억</td></tr><tr><td><b>④ B2B 한국 진입</b></td><td class="muted">건수 × 4,000만 원</td><td class="r">0건</td><td class="r">15건 · 6.0억</td></tr><tr class="sum"><td>연매출</td><td>① + ② + ③ + ④</td><td class="r">1.08억 원</td><td class="r">20.08억 원</td></tr></tbody></table><p class="muted" style="margin-top:10px">본문 13쪽의 식당 수수료 4.8억 원은 500곳 × 월 100만 원 기준, 이 표의 7.2억 원은 품목 확장 후 월 150만 원 기준</p></div>
+    <div class="stack" style="grid-template-rows:1fr auto">
+      <div class="card" style="padding:24px 30px;display:flex;flex-direction:column"><div class="kicker">수치의 성격</div><div style="margin-top:8px;flex:1;display:flex;flex-direction:column;justify-content:space-between"><div class="kd"><i style="background:#0a5c2c"></i><div><b>공식 통계</b><p>음식점 수 521,142곳, 서울 84,937곳, 동대문구 3,138곳, 식재료비 상승 어려움 94.1%</p></div></div><div class="kd"><i style="background:#0f9547"></i><div><b>팀 조사</b><p>농가 7곳 인터뷰·5곳 납품 의사, 커뮤니티 글 분류</p></div></div><div class="kd"><i style="background:#37b866"></i><div><b>사업 가정</b><p>월 거래액 100만 원, 수수료 8%·3%, 물류비</p></div></div><div class="kd"><i style="background:#9fd8b2"></i><div><b>가격 가설</b><p>구독 월 2.9만 원, B2B 건당 4,000만 원</p></div></div><div class="kd"><i style="background:#cfe9d8"></i><div><b>사업 목표</b><p>점포 75·500곳, 구독 50·1,200곳, B2B 0·15건</p></div></div></div></div>
+      <div class="slot"><b>확인 중</b><p>월 거래액 근거인 식재료비 월 865만 원의 기준(외식업체 평균인지 일반음식점인지)</p></div>
+    </div>
+  </div>
+  <p class="note">자료: 승헌 v17 부록 A1·A2, 본문 13·14쪽 · 점포·구독 수는 연평균 · 산지 택배·소분·배송비는 공급가에 포함된 비용이라 매출에 넣지 않음</p>
+</section>
+<!-- A7 -->
+<section class="slide">
+  <header class="header"><p class="eyebrow">Appendix · 본문 9 · 11쪽</p><div class="deck-id"><b>SOKURI</b><span>A7</span></div>
+    <h1>경쟁 비교 근거</h1>
+    <p class="lead">다른 서비스는 식당 한 곳의 구매를 돕고, <span class="hl">소쿠리는 같은 상권의 주문을 묶습니다</span>.</p></header>
+  <div class="body" style="grid-template-columns:1120px 1fr">
+    <div class="card" style="padding:18px 30px 8px"><table class="tbl cmp" style="height:100%"><colgroup><col style="width:330px"><col><col><col><col><col></colgroup>
+      <thead><tr><th>구매 기능</th><th class="c me">소쿠리</th><th class="c">쿠팡<br>사업자 소포장</th><th class="c">식봄<br>식자재몰</th><th class="c">키친보드<br>거래처 앱</th><th class="c">도매<br>상자 구매</th></tr></thead>
+      <tbody><tr class="diff"><td><b>같은 상권 주문 합산</b></td><td class="c me"><i class="m o"></i></td><td class="c"><i class="m x"></i></td><td class="c"><i class="m x"></i></td><td class="c"><i class="m x"></i></td><td class="c"><i class="m x"></i></td></tr><tr class="diff"><td><b>산지 농가 직출하</b></td><td class="c me"><i class="m o"></i></td><td class="c"><i class="m t"></i></td><td class="c"><i class="m t"></i></td><td class="c"><i class="m x"></i></td><td class="c"><i class="m x"></i></td></tr><tr class="diff"><td><b>상권 단위 수요 데이터</b></td><td class="c me"><i class="m o"></i></td><td class="c"><i class="m x"></i></td><td class="c"><i class="m t"></i></td><td class="c"><i class="m x"></i></td><td class="c"><i class="m x"></i></td></tr><tr class=""><td><b>필요한 만큼 소량 주문</b></td><td class="c me"><i class="m o"></i></td><td class="c"><i class="m o"></i></td><td class="c"><i class="m o"></i></td><td class="c"><i class="m t"></i></td><td class="c"><i class="m x"></i></td></tr><tr class=""><td><b>배송까지 한 번에</b></td><td class="c me"><i class="m o"></i></td><td class="c"><i class="m o"></i></td><td class="c"><i class="m o"></i></td><td class="c"><i class="m t"></i></td><td class="c"><i class="m t"></i></td></tr><tr class=""><td><b>상자 수준의 kg당 단가</b></td><td class="c me"><i class="m o"></i></td><td class="c"><i class="m t"></i></td><td class="c"><i class="m t"></i></td><td class="c"><i class="m t"></i></td><td class="c"><i class="m o"></i></td></tr></tbody></table></div>
+    <div class="stack" style="grid-template-rows:1fr 1fr 1fr 1fr">
+      <div class="qc"><b class="kt">쿠팡 사업자 소포장</b><p class="pt">필요한 만큼 사지만 kg당 단가가 높음 · 쿠팡 뉴스룸 사업자 회원 안내</p></div>
+      <div class="qc"><b class="kt">식봄 식자재몰</b><p class="pt">가격 비교, 통합배송, 시세 알림. 식당 한 곳 단위 구매 · CJ프레시웨이 뉴스룸</p></div>
+      <div class="qc"><b class="kt">키친보드 거래처 앱</b><p class="pt">기존 거래처와의 발주 관리 · 키친보드 공식 블로그</p></div>
+      <div class="qc"><b class="kt">도매 상자 구매</b><p class="pt">단가는 낮지만 상자째 사야 해 남는 양이 부담(A3)</p></div>
+    </div>
+  </div>
+  <p class="note">○ 제공 · △ 일부 제공 또는 확인 필요 · × 없음 · 진한 칸은 소쿠리만의 차별점 · 공개 자료 기준 팀 분석(본문 11쪽과 같음)</p>
+</section>
+<!-- A8 -->
+<section class="slide">
+  <header class="header"><p class="eyebrow">Appendix · 본문 15 · 16쪽</p><div class="deck-id"><b>SOKURI</b><span>A8</span></div>
+    <h1>해외 B2B 검증 계획</h1>
+    <p class="lead">첫 고객 후보 5곳에 <span class="hl">필요한 지표와 견적을 보여 주고 지불의사를 확인</span>합니다.</p></header>
+  <div class="body" style="grid-template-rows:auto auto 1fr auto">
+    <div class="dflow"><div class="dn"><b>상권별 주문 기록</b><p>참여 점포의 발주 기록이 들어올 때마다 갱신. 판매 기록은 동의 시 2028년부터</p></div><div class="da"></div><div class="dn"><b>상권 수요 지표</b><p>식재료 주문으로 본 수요 추정, 조달 단가</p></div><div class="da"></div><div class="dn on"><b>한국 진입 서비스</b><p>상권 선정, 산지 공급망 연결, 1호점 공동발주 운영</p></div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px">
+      <div class="card"><div class="kicker">누구를</div><p class="lg">일본 외식 브랜드, 한국 진출 지원업체 5곳</p></div>
+      <div class="card"><div class="kicker">어떻게 만나는지</div><p class="lg">일본 무역관 네트워크</p><p class="muted" style="margin-top:8px">시범 상권의 주문 데이터를 먼저 쌓은 뒤 인터뷰</p></div>
+      <div class="card"><div class="kicker">무엇을 확인하는지</div><p class="lg">필요 지표와 견적에 대한 지불의사</p></div>
+    </div>
+    <div class="card" style="display:grid;grid-template-columns:620px 1fr;gap:48px;align-items:center">
+      <div><div class="kicker">2028년 목표</div><p class="lg">연 15건 × 건당 4,000만 원</p><p class="big8">6억 원</p><p class="muted" style="margin-top:8px">건당 4,000만 원은 가격 가설. 인터뷰에서 견적을 보여 주고 확인</p></div>
+      <div><div class="kicker">2028년 매출 20.1억 원 중 비중</div>
+        <div class="share"><span style="flex:49;background:#cfe9d8;color:#0a5c2c">공동발주 수수료 49%</span><span style="flex:21;background:#37b866">구독 21%</span><span style="flex:30;background:#0f9547">B2B 30%</span></div>
+        <p class="muted" style="margin-top:10px">B2B 비중이 커서 첫 계약 전까지는 가설로 구분해 설명(본문 14쪽)</p></div>
+    </div>
+    <div class="slot" style="display:flex;gap:20px;align-items:baseline"><b>확인 중</b><p style="margin:0">인터뷰 질문지와 대상 기업 명단, 인터뷰 일정</p></div>
+  </div>
+  <p class="note">자료: 본문 15·16쪽, 팀 논의(2026.11.23) · 메트로경제(2026.02.18), 한국경제(2026.10.24), 헤럴드경제(2026.07.28), 투데이코리아(2026.09.08)</p>
+</section>
+<!-- 출처 -->
+<section class="slide">
+  <header class="header"><p class="eyebrow">Appendix</p><div class="deck-id"><b>SOKURI</b><span>출처</span></div><h1>출처</h1></header>
+  <div class="body" style="inset:176px 76px 84px;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr"><div class="card"><div class="kicker">통계와 공공데이터</div><ul class="sl"><li>농림축산식품부·한국농촌경제연구원, 2025 외식업체 경영실태 조사 보고서<br><span class="muted">mafra.go.kr/bbs/home/798/577154/artclView.do</span></li><li>2025 외식산업경기동향지수 종합보고서 표 11, 업종별 외식산업체 수<br><span class="muted">mafra.go.kr/bbs/home/798/594990/download.do</span></li><li>한국농촌경제연구원, 2024 식품외식산업 7대 이슈<br><span class="muted">krei.re.kr/namo/binary/files/000025/2401_Leflet.pdf</span></li><li>서울 열린데이터광장, 동대문구 일반음식점 인허가 정보<br><span class="muted">data.seoul.go.kr/dataList/OA-18657/S/1/datasetView.do</span></li><li>서울 열린데이터광장, 서울시 상권분석서비스(2025년 4분기)<br><span class="muted">data.seoul.go.kr/dataList/OA-15577/S/1/datasetView.do</span></li></ul></div><div class="card"><div class="kicker">가격</div><ul class="sl"><li>가락시장 청양고추 경락가(2026.11.21)<br><span class="muted">garakprice.com/pum_detail.php?pum_cd=24203</span></li><li>aT KAMIS 도매·소매가격(중도매인 판매가, 소매 연평균)<br><span class="muted">kamis.or.kr</span></li><li>쿠팡 국내산 청양고추 1kg·10kg 판매가(2026.11 조회)<br><span class="muted">coupang.com</span></li><li>한국농어민신문, 청과부류 위탁수수료 관련 기사<br><span class="muted">agrinet.co.kr/news/articleView.html?idxno=333508</span></li></ul></div><div class="card"><div class="kicker">경쟁 서비스와 해외 시장</div><ul class="sl"><li>CJ프레시웨이 뉴스룸, 식봄 가격 비교·통합배송·시세 알림<br><span class="muted">cjfreshway.com/newsroom</span></li><li>키친보드 공식 블로그<br><span class="muted">blog.kitchenboard.co.kr/25 · /129 · /52</span></li><li>쿠팡 뉴스룸, 사업자 회원 안내<br><span class="muted">news.coupang.com/archives/64777</span></li><li>해외 외식 브랜드 한국 진출 기사<br><span class="muted">메트로경제(2026.02.18), 한국경제(2026.10.24), 헤럴드경제(2026.07.28), 투데이코리아(2026.09.08)</span></li></ul></div><div class="card"><div class="kicker">팀 자료</div><ul class="sl"><li>팀 농가 인터뷰와 농가별 브랜딩 구성안<br><span class="muted">농가 5곳 자료</span></li><li>외식업 커뮤니티 글 4만 2,584건<br><span class="muted">네이버 카페 등, 2026년 11월 수집, 글마다 분류</span></li><li>승헌 v17 부록 A1~A4, 11-18 팀 회의 정리<br><span class="muted">숫자의 근거와 가정, 매출 산출표, 운영 원칙</span></li><li>지도: 시도 경계<br><span class="muted">southkorea-maps(통계청 2013)</span></li></ul></div></div>
+</section>
 </main>
 <script>
 function fit(){const z=Math.min(1,(innerWidth-40)/1920);document.querySelectorAll('.slide').forEach(p=>p.style.setProperty('--z',z))}
